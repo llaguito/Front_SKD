@@ -1,0 +1,107 @@
+<footer class="page-footer font-small unique-color-light pt-0 fixed-bottom">
+  <div class="footer">
+    <div class="container">
+      <div class="row py-1 d-flex align-items-center">
+        <div class="col-md-6 col-lg-5 text-center text-md-left">
+          <button type="button" class="btn btn-primary botones" (click)="openModal(ts3)">TeamSpeak</button>
+          <button type="button" class="btn btn-primary botones" (click)="openModal(discord)">Discord</button>
+          <button type="button" class="btn btn-primary botones" (click)="openModal(Info)">Info Comunidad</button>
+          <button type="button" class="btn btn-primary botones" (click)="openModal(donaciones)">Donaciones</button>
+        </div>
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <label class="fraseStalking" *ngIf="session">{{ usuario.Nick }}</label>
+          <label *ngIf="session">|</label>
+          <label class="fraseStalking">Stalking Dragons</label>
+          <a href="https://twitter.com/DragonesAcecho" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/stalking.dragons.1?ref=bookmarks" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/skdragons/" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<ng-template #ts3>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">
+      <a href="ts3server://skdragons.com?port=9987">
+        Team Speak 3
+      </a>
+    </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body ts3Modal text-center">
+    <a href="ts3server://skdragons.com?port=9987">
+      <img src="{{ url }}">
+    </a>
+  </div>
+</ng-template>
+
+<ng-template #discord>
+  <div class="modal-body ts3Modal text-center">
+    <iframe src="https://discordapp.com/widget?id=390277789317857310&theme=dark" width="350" height="500" allowtransparency="true"
+      frameborder="0"></iframe>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #donaciones>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Donaciones</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true ">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h1 class="text-center">Donadores</h1>
+    <div class="text-center">
+      <img src="../../../assets/Images/HALOJA.png " alt="Un donador">
+    </div>
+    <p class="textoInfo">¿Porque las donaciones? No somos una comunidad lucrativa, pero para mantener todos los servicios que damos a nuestros
+      miembros siempre es necesario tener ayudas de algún lado, en este caso las donaciones son un gran aporte al mantenimiento
+      económico de todos los servidores de los que dispone la comunidad.</p>
+  </div>
+  <div class="modal-footer">
+    <h4 class="text-right">Donación en Paypal --></h4>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END
+                        PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+      <img alt="Paypal" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>
+</ng-template>
+
+<ng-template #Info>
+  <button type="button " class="close pull-right " aria-label="Close " (click)="modalRef.hide()">
+    <span aria-hidden="true ">&times;</span>
+  </button>
+  <div class="modal-body textoInfo">
+    <p>Nuestra comunidad nació para ayudar a todo jugador que lo pida. Estamos siempre conectados para entretenernos juntos,
+      disfrutar y dar a conocer a todo aquel jugador que participe en ella. Ofrecemos servidores tanto de videojuegos como
+      de voz, y te preguntaras porque, estamos para ayudar, no para lucrarnos, ayudarnos mutuamente para crecer nos hace
+      fuertes a todos juntos.
+    </p>
+    <h4>Servidor de TeamSpeak 3</h4>
+    <ul>
+      <li>Los canales temporales son para aquellas personas que entren al TS3 a pasar solo un rato y ellos mismos lo pueden crear
+        cuando todos los usuarios abandonan el canal creado temporalmente se borrará automáticamente por el sistema.
+      </li>
+      <li>Los canales permanentes son canales que, despúes de leer la descripción de los canales, información importante para
+        saber cuales son las condiciones para tener un canal permanente para tu Grupo o Clan, le das un toque (Poke) a SrKenny,
+        LlaGuiTo o manusreyesi que son los únicos que pueden convertir el canal a permanente y asignar los poderes necesarios
+        para que cada uno pueda editar su propio canal.</li>
+    </ul>
+  </div>
+</ng-template>

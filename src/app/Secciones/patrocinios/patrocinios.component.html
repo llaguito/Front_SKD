@@ -1,0 +1,75 @@
+<section class="container-fluid h-100 contenedor-patrocinios">
+  <div class="row h-100 align-items-center">
+    <div class="col col-lg-12 text-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="colaboradores" src="../../../assets/Images/colaboradores.png" alt="Colaboradores">
+        </div>
+        <div class="col-lg-12">
+          <h4 align="center">Crecemos juntos</h4>
+        </div>
+        <div class="col-lg-12">
+          <section id="team-section">
+            <div class="container">
+              <div class="row team-data">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="team-profile">
+                    <div class="member-img" align="center">
+                      <img class="mx-auto" src="../../../assets/Images/2lanzados.jpg" alt="2lanzados">
+                    </div>
+                    <h4 align="center">2lanzados</h4>
+                    <div class="member-social" align="center">
+                      <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                          <a class="btn btn-primary" href="https://twitter.com/2lanzados" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn btn-primary" href="https://www.youtube.com/channel/UCFDQ6UpecozeDE4ZdLjCojg" target="_blank">
+                            <i class="fab fa-youtube-square"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <button type="button" class="btn btn-primary" (click)="openModal(lanzadosTwitch)">
+                            <i class="fab fa-twitch"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 unete">
+                  <div class="team-profile">
+                    <div class="member-img" align="center">
+                      <button routerLink="/contacto" type="button" class="btn btn-success btn-xl botonRedondo">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <h4 align="center">Unete a Sk Dragons</h4>
+                    <h4 align="center">Te esperamos</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #lanzadosTwitch>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">
+      <a href="https://www.twitch.tv/2lanzados">Twitch 2lanzados</a>
+    </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <iframe src="https://player.twitch.tv/?channel=2lanzados" frameborder="0" allowfullscreen="true" scrolling="no" height="287"
+      width="470"></iframe>
+  </div>
+</ng-template>

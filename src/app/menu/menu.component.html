@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top menu">
+  <a class="navbar-brand" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <form class="form-inline my-2 my-lg-0">
+    <button class="btn btn-outline-success my-2 my-sm-0 login loginPequeño" routerLink="/login">Login</button>
+  </form>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link link" routerLink="/inicio">Inicio</a>
+      </li>
+      <li>
+        <a class="nav-link barra">|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" routerLink="/staff">Staff</a>
+      </li>
+      <li>
+        <a class="nav-link barra">|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" routerLink="/notiblog">Noti-Blog</a>
+      </li>
+      <li>
+        <a class="nav-link barra">|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" routerLink="/patrocinios">Patrocinios</a>
+      </li>
+      <li>
+        <a class="nav-link barra">|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" routerLink="/contacto">Contacto</a>
+      </li>
+    </ul>
+  </div>
+  <form class="form-inline my-2 my-lg-0 loginGrande">
+    <button class="btn btn-outline-success my-2 my-sm-0 login" *ngIf="!session" routerLink="/login">Login</button>
+    <button class="btn btn-outline-success my-2 my-sm-0 login" *ngIf="session" routerLink="/panelPrincipal/inicioApp">Panel de control</button>
+    <button class="btn btn-outline-success my-2 my-sm-0 login" *ngIf="session" (click)="logout()">LogOut</button>
+  </form>
+</nav>

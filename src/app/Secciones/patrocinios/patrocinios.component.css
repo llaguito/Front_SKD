@@ -1,0 +1,20 @@
+.contenedor-patrocinios {
+    color: white;
+}
+
+.unete {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 587px) {
+    .contenedor-patrocinios {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .colaboradores {
+        width: 100%;
+    }
+}

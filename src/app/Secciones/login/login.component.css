@@ -1,0 +1,177 @@
+.contenedor-login {
+    overflow: hidden;
+}
+
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #6351CE;
+    padding: 10px;
+    border-radius: 14px;
+    color: yellow;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    background: rgba(158, 153, 158, 1);
+    background: -moz-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(158, 153, 158, 1)), color-stop(42%, rgba(120, 115, 119, 1)), color-stop(65%, rgba(158, 150, 155, 1)), color-stop(85%, rgba(213, 210, 212, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(135deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e999e', endColorstr='#ffffff', GradientType=1);
+}
+
+.registro {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #6351CE;
+    padding: 10px;
+    border-radius: 14px;
+    color: yellow;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    box-shadow: 10px 10px 5px 0px rgba(87, 75, 87, 1);
+    background: rgba(158, 153, 158, 1);
+    background: -moz-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(158, 153, 158, 1)), color-stop(42%, rgba(120, 115, 119, 1)), color-stop(65%, rgba(158, 150, 155, 1)), color-stop(85%, rgba(213, 210, 212, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(135deg, rgba(158, 153, 158, 1) 0%, rgba(120, 115, 119, 1) 42%, rgba(158, 150, 155, 1) 65%, rgba(213, 210, 212, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e999e', endColorstr='#ffffff', GradientType=1);
+}
+
+.desaparecer {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: hinge;
+    animation-name: hinge;
+}
+
+.aparecer {
+    -webkit-animation-name: jackInTheBox;
+    animation-name: jackInTheBox;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.letrasRojas {
+    color: red;
+}
+
+.linkRegistrar {
+    color: black;
+}
+
+@keyframes hinge {
+    0% {
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    20%,
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 80deg);
+        transform: rotate3d(0, 0, 1, 80deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    40%,
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, 60deg);
+        transform: rotate3d(0, 0, 1, 60deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d(0, 700px, 0);
+        transform: translate3d(0, 700px, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes hinge {
+    0% {
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    20%,
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 80deg);
+        transform: rotate3d(0, 0, 1, 80deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    40%,
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, 60deg);
+        transform: rotate3d(0, 0, 1, 60deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d(0, 700px, 0);
+        transform: translate3d(0, 700px, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

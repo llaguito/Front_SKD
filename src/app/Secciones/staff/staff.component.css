@@ -1,0 +1,20 @@
+.contenedor-staff {
+    color: white;
+}
+
+.staffskdragons {
+    width: 100%;
+}
+
+.redes {
+    background-color: white;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 580px) {
+    .contenedor-staff {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}

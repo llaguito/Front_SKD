@@ -1,0 +1,54 @@
+.fondoTotal {
+    background-image: url("../assets/Images/fondoInicio.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+.fondoError {
+    background-image: url("../assets/Images/errorPage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.fondoNotiBlog {
+    background-image: url("../assets/Images/fondoInicio.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 517px) {
+    .fondo {
+        background-image: url("../assets/Images/fondoInicio.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100%;
+    }
+    .fondoPanel {
+        background-image: url("../assets/Images/loginPrincipal.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .fondo {
+        background-image: url("../assets/Images/fondoInicio.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .fondoPanel {
+        background-image: url("../assets/Images/loginPrincipal.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}

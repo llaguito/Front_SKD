@@ -1,0 +1,15 @@
+<section class="container-fluid h-100">
+  <div class="row h-100 align-content-center">
+    <div class="col-lg-12">
+      <h1>
+        <span class="gestor px-1">Gestor de noticias</span>
+      </h1>
+    </div>
+    <div class="col-lg-12 editor px-0">
+      <app-ngx-editor [config]="config" [(ngModel)]="contenidoNoticia"></app-ngx-editor>
+    </div>
+    <div class="col-lg-12 text-right pt-2">
+      <button class="btn btn-success" (click)="publicarNoticia(contenidoNoticia)">Publicar</button>
+    </div>
+  </div>
+</section>

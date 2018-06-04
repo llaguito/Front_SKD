@@ -1,0 +1,71 @@
+<section class="container-fluid h-100 contenedor-contacto">
+  <div class="row h-100 align-items-center">
+    <div class="col col-lg-12 text-center">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <h4>CONTÁCTANOS</h4>
+            </li>
+            <li class="list-inline-item">
+              <a href="ts3server://skdragons.com?port=9987" tooltip="Accede a TeamSpeak clicando en la imagen" placement="top">
+                <img src="../../assets/Images/teamspeak.png" alt="Logo TeamSpeak 3" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://discord.gg/Fbb9baD" tooltip="Accede a Discord clicando en la imagen" placement="top">
+                <img src="../../assets/Images/discord.png" alt="Logo Discord" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 contacto">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <form class="formulario row">
+                    <label class="col-lg-12 label-control" [hidden]="formulario">Aquí estamos para lo que necesites.</label>
+                    <label class="col-lg-12 label-control" [hidden]="mensaje">Mensaje enviado correctamente.</label>
+                    <input name="nickMensaje" class="nick form-group form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Tu nick *"
+                      [(ngModel)]="correo.Nick" required [hidden]="formulario">
+                    <input name="emailMensaje" class="email form-group form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" type="email" placeholder="Tu email *"
+                      [(ngModel)]="correo.Email" required [hidden]="formulario">
+                    <textarea name="textareaMensaje" class="textarea form-group form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="Tu mensaje *"
+                      [(ngModel)]="correo.Mensaje" required [hidden]="formulario"></textarea>
+                    <div class="captcha col-lg-12 col-md-12 col-sm-12 col-xs-12" [hidden]="captcha">
+                      <app-captcha (resolve)="click($event)"></app-captcha>
+                    </div>
+                    <div class="captcha col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" [hidden]="mensaje">
+                      <a href="/contacto">¿Quieres enviar otro mensaje?</a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                      <label class="label-control label-rojo" [hidden]="vacio">No puede haber campos vacíos.</label>
+                      <label class="label-control" [hidden]="email">El email es incorrecto.</label>
+                      <button (click)="enviarCorreo()" class="enviar btn btn-primary" [hidden]="envio">Enviar mensaje</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h4 class="codigo">Códigos QR</h4>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <h5 class="canales">Canal de Telegram</h5>
+                      <img src="../../../assets/Images/QRCanalTelegram.png" alt="Código QR para el canal de Telegram" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
